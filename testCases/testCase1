@@ -1,0 +1,7 @@
+01
+Takes a string that is a color name and checks to see if the collor is a valid entry
+ColorNameLookup
+getColorNameFromStr(String colorStr)
+Yellow
+Yellow
+// Done
