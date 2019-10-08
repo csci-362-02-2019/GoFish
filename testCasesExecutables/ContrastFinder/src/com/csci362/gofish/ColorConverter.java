@@ -21,8 +21,6 @@
 package com.csci362.gofish;
 
 import java.awt.Color;
-import org.asqatasun.utils.colornamelookup.ColorNameLookup;
-
 /**
  * @author alingua
  */

@@ -18,8 +18,8 @@
  * Contact us by mail: asqatasun AT asqatasun DOT org
  */
 
-package org.asqatasun.utils.contrastchecker;
-
+//package org.asqatasun.utils.contrastchecker;
+package com.csci362.gofish;
 import java.awt.Color;
 import junit.framework.TestCase;
 import org.junit.Test;  // Junit 4 anotation @Test
