@@ -1,5 +1,6 @@
 05
 Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)
+xDriver2
 ColorConverter
 hex2RGB(String colorStr)
 #0000AA
