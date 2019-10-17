@@ -1,7 +1,7 @@
 import bin.com.csci362.gofish.*;
 import java.awt.Color;
-//import junit.framework.TestCase;
-//import org.junit.Test;  // Junit 4 anotation @Test
+import junit.framework.TestCase;
+import org.junit.Test;  // Junit 4 anotation @Test
 
 public class xColorNameLookupDriver {
 	public static void main (String[] args){
