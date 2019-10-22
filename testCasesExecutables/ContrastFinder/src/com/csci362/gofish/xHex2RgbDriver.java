@@ -1,9 +1,30 @@
-package com.csci362.gofish;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+//package com.csci362.gofish;
+
 public class xHex2RgbDriver {
 	
-	public static void main(String[] agrs) {
+	public static void main(String[] agrs) throws FileNotFoundException{
+		int num = 1;
 		
-		System.out.println("Test");
+
+		
+		
+		int lineNumber = 1;
+		while (num < 6){
+			File text = new File("../../../../../../testCases/testCase" + num +  ".txt");
+			Scanner scnr = new Scanner(text);
+			while(scnr.hasNextLine()){
+				
+				String line = scnr.nextLine();
+		    		System.out.println("line " + lineNumber + " :" + line);
+		    		lineNumber++;
+				
+			}
+			num++;
+			lineNumber = 1;
+		}
 
 	}
 
