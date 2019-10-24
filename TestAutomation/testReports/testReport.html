@@ -1,0 +1,64 @@
+<TABLE BORDER='5' CELLPADDING='4' CELLSPACING='3'>
+<TR>
+</TR>
+<TR>
+<TH>Test Case ID</TH>
+<TH>Requirements</TH>
+<TH>Driver</TH>
+<TH>Component</TH>
+<TH>Method</TH>
+<TH>Inputs</TH>
+<TH>Expected</TH>
+<TH>Actual</TH>
+<TH>Test Passed?</TH>
+</TR>
+<tr>
+<td>01</td>
+<td>Takes a string that is a color name and checks to see if the collor is a valid entry</td>
+<td>xDriver</td>
+<td>ColorNameLookup</td>
+<td>getColorNameFromStr(String colorStr)</td>
+<td>Yellow</td>
+<td>Yellow</td>
+<td><font color=green>pass</font></td>
+</tr>
+<tr>
+<td>02</td>
+<td>Takes a string that is a color name and checks to see if the collor is a valid entry</td>
+<td>xDriver</td>
+<td>ColorNameLookup</td>
+<td>getColorNameFromStr(String colorStr)</td>
+<td>YELLOW</td>
+<td>Yellow</td>
+<td><font color=green>pass</font></td>
+</tr>
+<tr>
+<td>03</td>
+<td>Takes a string that is a color name and checks to see if the collor is a valid entry</td>
+<td>xDriver</td>
+<td>ColorNameLookup</td>
+<td>getColorNameFromStr(String colorStr)</td>
+<td>yellow</td>
+<td>Yellow</td>
+<td><font color=green>pass</font></td>
+</tr>
+<tr>
+<td>04</td>
+<td>Takes a string that is a color hexidecimal code and returns the RGB value of that color (Green)</td>
+<td>xDriver2</td>
+<td>ColorConverter</td>
+<td>hex2RGB(String colorStr)</td>
+<td>#00AA00</td>
+<td>rgb(0,170,0)</td>
+<td><font color=green>pass</font></td>
+</tr>
+<tr>
+<td>05</td>
+<td>Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)</td>
+<td>xDriver2</td>
+<td>ColorConverter</td>
+<td>hex2RGB(String colorStr)</td>
+<td>#0000AA</td>
+<td>rgb(0,0,170)</td>
+<td><font color=green>pass</font></td>
+</tr>
