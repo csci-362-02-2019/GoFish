@@ -18,7 +18,7 @@
  * Contact us by mail: asqatasun AT asqatasun DOT org
  */
 //package org.asqatasun.utils.contrastchecker;
-package bin.com.csci362.gofish;
+//package bin.com.csci362.gofish;
 import java.awt.Color;
 
 /**
