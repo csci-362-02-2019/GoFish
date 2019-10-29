@@ -5,4 +5,4 @@ ColorConverter
 hex2RGB(String colorStr)
 #0000AA
 rgb(0, 0, 170)
-// Done
+rgb(0, 0, 170)
