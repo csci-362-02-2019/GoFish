@@ -1,7 +1,7 @@
 //import bin.com.csci362.gofish.ColorNameLookup;
 import java.awt.Color;
 
-public class xColorNameLookupDriver {
+public class xGetColorNameFromStrDriver {
 	public static void main (String[] args){
 		try{
 			//Retreiving passed data
@@ -12,7 +12,7 @@ public class xColorNameLookupDriver {
 			String method = args[4];
 			String test = args[5];
 			String answer = args[6];
-    			//Color oracle = (Color)Color.class.getField(answer.toUpperCase()).get(null);
+
 			ColorNameLookup obj = new ColorNameLookup();
 			String provided = obj.getColorNameFromStr(test);
 			
@@ -24,7 +24,7 @@ public class xColorNameLookupDriver {
 			System.out.println (test);
 			System.out.println (answer); //expected answer
 			System.out.println (provided); //actual answer
-			//System.out.println (
+			
 		}
 		catch (Exception e){
 			System.out.println(e.getMessage());

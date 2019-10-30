@@ -55,7 +55,7 @@ public final class ContrastChecker {
     /**
      *
      */
-    private ContrastChecker() {
+    public ContrastChecker() {
     }
 
     /**
