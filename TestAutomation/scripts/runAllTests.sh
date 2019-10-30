@@ -52,17 +52,10 @@ declare inputs=${arr[5]}
 declare expected=${arr[6]}
 
 ##chooses what driver need to be used
-if [[ $component == "ColorNameLookup" ]]
-then
-	cd ../testCasesExecutables
-	java xColorNameLookupDriver "$testid" "$requirement" "$driver" "$component" "$method" "$inputs" "$expected" > ../temp/"$filenoext"report.txt &
-	fi
-	
-if [[ $component == "ColorConverter" ]]
-then
-	cd  ../testCasesExecutables
-	java xHex2RgbDriver "$testid" "$requirement" "$driver" "$component" "$method" "$inputs" "$expected" > ../temp/"$filenoext"report.txt &
-	fi
+
+cd ../testCasesExecutables
+java $driver "$testid" "$requirement" "$driver" "$component" "$method" "$inputs" "$expected" > ../temp/"$filenoext"report.txt &
+
 done
 wait
 

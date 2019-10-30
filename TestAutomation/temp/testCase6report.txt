@@ -1,6 +1,6 @@
 06
 Takes a string that is a color hexidecimal code and returns the RGB value of that color (Green)
-xDriver2
+xHex2RgbDriver
 ColorConverter
 hex2RGB(String colorStr)
 #00AA00
