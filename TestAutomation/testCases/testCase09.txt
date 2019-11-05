@@ -1,8 +1,8 @@
-07
+09
 Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)
 xHex2RgbDriver
 ColorConverter
 hex2RGB(String colorStr)
-#0000AA
-rgb(0, 0, 170)
-rgb(0, 0, 170)
+#9915AB
+rgb(153, 21, 171)
+// Done

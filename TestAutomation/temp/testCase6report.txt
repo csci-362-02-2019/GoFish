@@ -1,8 +1,0 @@
-06
-Takes a string that is a color hexidecimal code and returns the RGB value of that color (Green)
-xHex2RgbDriver
-ColorConverter
-hex2RGB(String colorStr)
-#00AA00
-rgb(0, 170, 0)
-rgb(0, 170, 0)
