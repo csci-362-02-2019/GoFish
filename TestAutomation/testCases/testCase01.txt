@@ -1,8 +1,8 @@
 01
 Takes a string that is a color name and checks to see if the color is a valid entry
-xColorNameLookupDriver
+xGetColorNameFromStrDriver
 ColorNameLookup
 getColorNameFromStr(String colorStr)
 Yellow
-Yellow
+Test Yellow
 // Done
