@@ -5,4 +5,4 @@ ContrastChecker
 distanceColor(Color fgColor, Color bgColor)
 255,255,0 255,165,0
 90
-// Done
+90

@@ -5,5 +5,4 @@ ColorConverter
 colorFromRgbStr(String colorStr)
 255, 0, 0
 255,0,0
-//Done
-
+255,0,0

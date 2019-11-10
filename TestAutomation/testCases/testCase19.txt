@@ -4,6 +4,6 @@ colorFromRgbStrDriver
 ColorConverter
 colorFromRgbStr(String colorStr)
 rgb(-255, 0, 0)
-Fail
+ERROR
 //Done
 

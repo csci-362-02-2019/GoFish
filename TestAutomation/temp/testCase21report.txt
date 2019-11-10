@@ -5,5 +5,4 @@ ColorConverter
 rgb2Hsl(Color color)
 160,180,0
 hsl(66, 100%, 35%)
-//Done
-
+hsl(66, 100%, 35%)

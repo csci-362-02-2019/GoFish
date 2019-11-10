@@ -1,8 +1,8 @@
-11
+14
 Takes two Colors and determines the distance between their RGB values
 xDistanceColorDriver
 ContrastChecker
 distanceColor(Color fgColor, Color bgColor)
-255,255,0 255,165,0
-90
-// Done
+255,255,0 70,30,40
+294
+294

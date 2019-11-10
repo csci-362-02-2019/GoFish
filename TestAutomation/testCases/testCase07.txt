@@ -4,5 +4,5 @@ xHex2RgbDriver
 ColorConverter
 hex2RGB(String colorStr)
 #0000AA
-rgb(0, 0, 170)
+0,0,170
 // Done

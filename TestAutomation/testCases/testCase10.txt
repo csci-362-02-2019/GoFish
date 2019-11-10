@@ -4,5 +4,5 @@ xHex2RgbDriver
 ColorConverter
 hex2RGB(String colorStr)
 #00000G
-Fail
+ERROR
 // Done

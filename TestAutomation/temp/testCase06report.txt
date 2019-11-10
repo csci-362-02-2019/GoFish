@@ -5,4 +5,4 @@ ColorConverter
 hex2RGB(String colorStr)
 #00AA00
 0,170,0
-// Done
+0,170,0

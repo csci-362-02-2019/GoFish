@@ -4,5 +4,5 @@ xHex2RgbDriver
 ColorConverter
 hex2RGB(String colorStr)
 #121212
-rgb(18, 18, 18)
+18,18,18
 // Done
