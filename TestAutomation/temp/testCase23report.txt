@@ -1,8 +1,0 @@
-23
-Takes a color in rgb format and converts it to hsl format
-xRgb2HslDriver
-ColorConverter
-rgb2Hsl(Color color)
--1,180,0
-ERROR
-ERROR

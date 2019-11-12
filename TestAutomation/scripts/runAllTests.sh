@@ -53,7 +53,7 @@ declare expected=${arr[6]}
 
 ##chooses what driver need to be used
 
-cd ../testCasesExecutables
+cd ../testCasesExecutables/
 java $driver "$testid" "$requirement" "$driver" "$component" "$method" "$inputs" "$expected" > ../temp/"$filenoext"report.txt &
 
 done
@@ -97,6 +97,9 @@ echo "</TABLE>" >> ../testReports/testReport.html
 
 
 xdg-open ../testReports/testReport.html
+rm -rf ../temp/*.txt
+rm -rf ../testCasesExecutables/*.class
+
 
 #### Helper Code/Testing Code
 

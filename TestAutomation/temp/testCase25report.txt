@@ -1,8 +1,0 @@
-25
-Takes a color in rgb format and converts it to hsl format
-xRgb2HslDriver
-ColorConverter
-rgb2Hsl(Color color)
-40,25,220
-hsl(244, 79%, 48%)
-hsl(244, 79%, 48%)

@@ -1,8 +1,0 @@
-13
-Takes two Colors and determines the distance between their RGB values
-xDistanceColorDriver
-ContrastChecker
-distanceColor(Color fgColor, Color bgColor)
-255,255,0 300,7,21
-ERROR
-ERROR
