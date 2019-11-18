@@ -3,7 +3,7 @@ cd $(dirname $0)
 ##delete all class files, report files and temp files
 rm -rf ../testCasesExecutables/*.class
 rm -rf ../testReports/testReport.html
-rm -rf ../temp/*.txt
+rm -rf ../testReports/temp/*.txt
 
 ##creates an htmlfile formated with a table
 now=$(date +"%m-%d-%Y | %H:%M:%S")
@@ -54,13 +54,13 @@ declare expected=${arr[6]}
 ##chooses what driver need to be used
 
 cd ../testCasesExecutables/
-java $driver "$testid" "$requirement" "$driver" "$component" "$method" "$inputs" "$expected" > ../temp/"$filenoext"report.txt &
+java $driver "$testid" "$requirement" "$driver" "$component" "$method" "$inputs" "$expected" > ../testReports/temp/"$filenoext"report.txt &
 
 done
 wait
 
 ##reads the temp files
-for file in ../temp/*
+for file in ../testReports/temp/*
 do
 i=0;
 filenopath=${file##*/}
@@ -97,7 +97,7 @@ echo "</TABLE>" >> ../testReports/testReport.html
 
 
 xdg-open ../testReports/testReport.html
-rm -rf ../temp/*.txt
+rm -rf ../testReports/temp/*.txt
 rm -rf ../testCasesExecutables/*.class
 
 
