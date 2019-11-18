@@ -64,6 +64,7 @@ public class ColorNameLookup {
      *      https://www.w3schools.com/colors/colors_names.asp
      *      http://htmlcolorcodes.com/fr/noms-de-couleur/
      */
+    //FAULT ADDED- Yellow changed to yellow
     private ArrayList<ColorName> initColorList() {
         ArrayList<ColorName> colors = new ArrayList<ColorName>();
         colors.add(new ColorName("AliceBlue", 0xF0, 0xF8, 0xFF));
@@ -211,7 +212,7 @@ public class ColorNameLookup {
         colors.add(new ColorName("Wheat", 0xF5, 0xDE, 0xB3));
         colors.add(new ColorName("White", 0xFF, 0xFF, 0xFF));
         colors.add(new ColorName("WhiteSmoke", 0xF5, 0xF5, 0xF5));
-        colors.add(new ColorName("Yellow", 0xFF, 0xFF, 0x00));
+        colors.add(new ColorName("yellow", 0xFF, 0xFF, 0x00));
         colors.add(new ColorName("YellowGreen", 0x9A, 0xCD, 0x32));
         colors.add(new ColorName("RebeccaPurple", 0x66, 0x33, 0x99)); // CCS 4 #663399
         return colors;

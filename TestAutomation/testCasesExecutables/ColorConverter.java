@@ -36,14 +36,16 @@ public final class ColorConverter {
     private static final int RGB_HEXA_LENGTH = 6;
     private static final int RGB_SHORT_HEXA_LENGTH = 3;
     private static final int CONVERT_TO_BASE_16 = 16;
-    private static final int MAX_ANGLE = 360;
+    //FAULT ADDED - Changed max angle to 180
+    private static final int MAX_ANGLE = 180;
     private static final int RGB_MIN = 0;
     private static final int RGB_MAX = 255;
     private static final int CONSTANT_SL_COMPONENTS_HUNDRED     = 100;
     private static final int CONSTANT_S_COMPONENTS_TWO_HUNDRED  = 200;
     private static final int CONSTANT_SL_COMPONENTS_TWO         = 2;
     private static final int CONSTANT_S_COMPONENTS_FIFTY        = 50;
-    private static final String HEXADECIMAL_DICTIONNARY    = "[0-9A-Fa-f]+";   //  FFF,  FFFFFF
+    //FAULT ADDED- Changed the max letter to E
+    private static final String HEXADECIMAL_DICTIONNARY    = "[0-9A-Ea-f]+";   //  FFF,  FFFFFF
     private static final String HEXADECIMAL_DICTIONNARY_V2 = "^#?([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"; // #FFF, #FFFFFF, FFF, FFFFFF (but not FF or FFFF)
     private static final String SHORT_RGB_DICTIONNARY      = "^[0-9]{1,3},[0-9]{1,3},[0-9]{1,3}$";          // ex: "255,255,255"
     private static final String RGB_DICTIONNARY            = "^rgb\\([0-9]{1,3},[0-9]{1,3},[0-9]{1,3}\\)?$"; // ex: "rgb(255,255,255)" and "rgb(255,255,255"
@@ -191,9 +193,10 @@ public final class ColorConverter {
      * @param  colorStr ex: rgb(255,255,255) or 255,255,255
      * @return Color object or NULL
      */
+    //FAULT ADDED- Removed toLower Case command from string str
     public static Color colorFromRgbStr(String colorStr) {
         Color  color = null;
-        String str   = colorStr.toLowerCase().replaceAll("\\s", ""); // replace ' ', \t, \n, ...
+        String str   = colorStr.replaceAll("\\s", ""); // replace ' ', \t, \n, ...
         if (str.matches(RGB_DICTIONNARY) | str.matches(SHORT_RGB_DICTIONNARY)){  // ex: rgb(255,255,255) or 255,255,255
             str = str.replaceAll("rgb\\(", "");
             str = str.replaceAll("\\)", "");

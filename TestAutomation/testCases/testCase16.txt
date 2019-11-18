@@ -3,7 +3,7 @@ Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a
 colorFromRgbStrDriver
 ColorConverter
 colorFromRgbStr(String colorStr)
-rgb(255, 255, 255)
+RGB(255, 255, 255)
 255,255,255
 //Done
 

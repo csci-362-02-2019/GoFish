@@ -3,6 +3,6 @@ Takes a string that is a color hexidecimal code and returns the RGB value of tha
 xHex2RgbDriver
 ColorConverter
 hex2RGB(String colorStr)
-#00AA00
-0,170,0
+#00FF00
+0,250,0
 // Done
