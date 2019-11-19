@@ -150,11 +150,14 @@ filenoext=${filenopath%.*}
 done < $file
 
 ##creates variables for comparison
-declare texpected=${arr[6]}
-declare tactual=${arr[7]}
+declare texpected=${arr[7]}
+declare tactual=${arr[8]}
+
+#echo $texpected
+#echo $tactual
 
 ##compares the expected and actual results and adds pass or fail to html	 
-if [ "$texpected" == "$tactual" ]
+if [[ "$texpected" == "$tactual" ]]
  then
 	echo "<td bgcolor="green">Pass</td>" >> ../testReports/testReport.html
 	 else
@@ -178,7 +181,7 @@ rm -rf ../testCasesExecutables/*.class
 
 #test outputs
 #echo "-------------------------"  
-echo $testid
+#echo $testid
 #echo $requirement
 #echo $driver
 #echo $component
