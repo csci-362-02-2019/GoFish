@@ -1,4 +1,65 @@
-Run Time: 11-18-2019 | 11:10:20
+<style> .tooltip {
+    display:inline-block;
+    position:relative;
+    border-bottom:1px dotted #666;
+    text-align:left;
+}
+
+.tooltip h3 {margin:12px 0;}
+
+.tooltip .right {
+    min-width:200px;
+    max-width:400px;
+    top:50%;
+    left:100%;
+    margin-left:20px;
+    transform:translate(0, -50%);
+    padding:0;
+    color:#EEEEEE;
+    background-color:#444444;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.tooltip:hover .right {
+    visibility:visible; opacity:1;
+}
+
+.tooltip .right img {
+    width:400px;
+    border-radius:8px 8px 0 0;
+}
+.tooltip .text-content {
+    padding:10px 20px;
+}
+
+.tooltip .right i {
+    position:absolute;
+    top:50%;
+    right:100%;
+    margin-top:-12px;
+    width:12px;
+    height:24px;
+    overflow:hidden;
+}
+.tooltip .right i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:0;
+    top:50%;
+    transform:translate(50%,-50%) rotate(-45deg);
+    background-color:#444444;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}</style>
+Run Time: 11-19-2019 | 09:30:32
 <TABLE BORDER='5' CELLPADDING='4' CELLSPACING='3'>
 <TR>
 </TR>
@@ -13,454 +74,1454 @@ Run Time: 11-18-2019 | 11:10:20
 <TH>Actual</TH>
 <TH>Test Passed?</TH>
 </TR>
-<TD>01
-</TD>
-<TD>Takes a string that is a color name and checks to see if the color is a valid entry
-</TD>
-<TD>xGetColorNameFromStrDriver
-</TD>
-<TD>ColorNameLookup
-</TD>
-<TD>getColorNameFromStr(String colorStr)
-</TD>
-<TD>YELLOW
-</TD>
-<TD>Yellow
-</TD>
-<TD>Yellow
-</TD>
-<td bgcolor=green>Pass</td>
-</tr>
-<TD>02
-</TD>
-<TD>Takes a string that is a color name and checks to see if the collor is a valid entry
-</TD>
-<TD>xGetColorNameFromStrDriver
-</TD>
-<TD>ColorNameLookup
-</TD>
-<TD>getColorNameFromStr(String colorStr)
-</TD>
-<TD>4
-</TD>
+<div class='tooltip'>
+<div class='right'>
 <TD>
+01
 </TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
 <TD>
+Takes a string that is a color name and checks to see if the color is a valid entry
 </TD>
-<td bgcolor=green>Pass</td>
-</tr>
-<TD>03
-</TD>
-<TD>Takes a string that is a color name and checks to see if the collor is a valid entry
-</TD>
-<TD>xGetColorNameFromStrDriver
-</TD>
-<TD>ColorNameLookup
-</TD>
-<TD>getColorNameFromStr(String colorStr)
-</TD>
-<TD>green
-</TD>
-<TD>Green
-</TD>
-<TD>Green
-</TD>
-<td bgcolor=green>Pass</td>
-</tr>
-<TD>04
-</TD>
-<TD>Takes a string that is a color name and checks to see if the collor is a valid entry
-</TD>
-<TD>xGetColorNameFromStrDriver
-</TD>
-<TD>ColorNameLookup
-</TD>
-<TD>getColorNameFromStr(String colorStr)
-</TD>
-<TD>orAnge
-</TD>
-<TD>Orange
-</TD>
-<TD>Orange
-</TD>
-<td bgcolor=green>Pass</td>
-</tr>
-<TD>05
-</TD>
-<TD>Takes a string that is a color name and checks to see if the collor is a valid entry
-</TD>
-<TD>xGetColorNameFromStrDriver
-</TD>
-<TD>ColorNameLookup
-</TD>
-<TD>getColorNameFromStr(String colorStr)
-</TD>
-<TD>Shmoop
-</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
 <TD>
+xGetColorNameFromStrDriver
 </TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
 <TD>
+ColorNameLookup
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+getColorNameFromStr(String colorStr)
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+YELLOW
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Yellow
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Yellow
+</TD>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>06
+<div class='tooltip'>
+<div class='right'>
+<TD>
+02
 </TD>
-<TD>Takes a string that is a color hexidecimal code and returns the RGB value of that color (Green)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a string that is a color name and checks to see if the collor is a valid entry
 </TD>
-<TD>xHex2RgbDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xGetColorNameFromStrDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorNameLookup
 </TD>
-<TD>hex2RGB(String colorStr)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+getColorNameFromStr(String colorStr)
 </TD>
-<TD>#00AA00
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+4
 </TD>
-<TD>0,170,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+
 </TD>
-<TD>0,170,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>07
+<div class='tooltip'>
+<div class='right'>
+<TD>
+03
 </TD>
-<TD>Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a string that is a color name and checks to see if the collor is a valid entry
 </TD>
-<TD>xHex2RgbDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xGetColorNameFromStrDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorNameLookup
 </TD>
-<TD>hex2RGB(String colorStr)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+getColorNameFromStr(String colorStr)
 </TD>
-<TD>#0000AA
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+green
 </TD>
-<TD>0,0,170
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Green
 </TD>
-<TD>0,0,170
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Green
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>08
+<div class='tooltip'>
+<div class='right'>
+<TD>
+04
 </TD>
-<TD>Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a string that is a color name and checks to see if the collor is a valid entry
 </TD>
-<TD>xHex2RgbDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xGetColorNameFromStrDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorNameLookup
 </TD>
-<TD>hex2RGB(String colorStr)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+getColorNameFromStr(String colorStr)
 </TD>
-<TD>#121212
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+orAnge
 </TD>
-<TD>18,18,18
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Orange
 </TD>
-<TD>18,18,18
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Orange
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>09
+<div class='tooltip'>
+<div class='right'>
+<TD>
+05
 </TD>
-<TD>Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a string that is a color name and checks to see if the collor is a valid entry
 </TD>
-<TD>xHex2RgbDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xGetColorNameFromStrDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorNameLookup
 </TD>
-<TD>hex2RGB(String colorStr)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+getColorNameFromStr(String colorStr)
 </TD>
-<TD>#9915AB
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Shmoop
 </TD>
-<TD>153,21,171
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+
 </TD>
-<TD>153,21,171
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>10
+<div class='tooltip'>
+<div class='right'>
+<TD>
+06
 </TD>
-<TD>Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a string that is a color hexidecimal code and returns the RGB value of that color (Green)
 </TD>
-<TD>xHex2RgbDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xHex2RgbDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>hex2RGB(String colorStr)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hex2RGB(String colorStr)
 </TD>
-<TD>#00000G
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+#00AA00
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+0,170,0
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+0,170,0
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>11
+<div class='tooltip'>
+<div class='right'>
+<TD>
+07
 </TD>
-<TD>Takes two Colors and determines the distance between their RGB values
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)
 </TD>
-<TD>xDistanceColorDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xHex2RgbDriver
 </TD>
-<TD>ContrastChecker
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>distanceColor(Color fgColor, Color bgColor)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hex2RGB(String colorStr)
 </TD>
-<TD>255,255,0 255,165,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+#0000AA
 </TD>
-<TD>90
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+0,0,170
 </TD>
-<TD>90
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+0,0,170
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>12
+<div class='tooltip'>
+<div class='right'>
+<TD>
+08
 </TD>
-<TD>Takes two Colors and determines the distance between their RGB values
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)
 </TD>
-<TD>xDistanceColorDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xHex2RgbDriver
 </TD>
-<TD>ContrastChecker
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>distanceColor(Color fgColor, Color bgColor)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hex2RGB(String colorStr)
 </TD>
-<TD>255,255,0 -1,165,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+#121212
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+18,18,18
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+18,18,18
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>13
+<div class='tooltip'>
+<div class='right'>
+<TD>
+09
 </TD>
-<TD>Takes two Colors and determines the distance between their RGB values
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)
 </TD>
-<TD>xDistanceColorDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xHex2RgbDriver
 </TD>
-<TD>ContrastChecker
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>distanceColor(Color fgColor, Color bgColor)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hex2RGB(String colorStr)
 </TD>
-<TD>255,255,0 300,7,21
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+#9915AB
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+153,21,171
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+153,21,171
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>14
+<div class='tooltip'>
+<div class='right'>
+<TD>
+10
 </TD>
-<TD>Takes two Colors and determines the distance between their RGB values
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a string that is a color hexidecimal code and returns the RGB value of that color (Blue)
 </TD>
-<TD>xDistanceColorDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xHex2RgbDriver
 </TD>
-<TD>ContrastChecker
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>distanceColor(Color fgColor, Color bgColor)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hex2RGB(String colorStr)
 </TD>
-<TD>255,255,0 70,30,40
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+#00000G
 </TD>
-<TD>294
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
 </TD>
-<TD>294
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>15
+<div class='tooltip'>
+<div class='right'>
+<TD>
+11
 </TD>
-<TD>Takes two Colors and determines the distance between their RGB values
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes two Colors and determines the distance between their RGB values
 </TD>
-<TD>xDistanceColorDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xDistanceColorDriver
 </TD>
-<TD>ContrastChecker
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ContrastChecker
 </TD>
-<TD>distanceColor(Color fgColor, Color bgColor)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+distanceColor(Color fgColor, Color bgColor)
 </TD>
-<TD>255,255,0 60,130,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+255,255,0 255,165,0
 </TD>
-<TD>231.6
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+90
 </TD>
-<TD>231.6
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+90
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>16
+<div class='tooltip'>
+<div class='right'>
+<TD>
+12
 </TD>
-<TD>Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a java Color obj
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes two Colors and determines the distance between their RGB values
 </TD>
-<TD>colorFromRgbStrDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xDistanceColorDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ContrastChecker
 </TD>
-<TD>colorFromRgbStr(String colorStr)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+distanceColor(Color fgColor, Color bgColor)
 </TD>
-<TD>rgb(255, 255, 255)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+255,255,0 -1,165,0
 </TD>
-<TD>255,255,255
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
 </TD>
-<TD>255,255,255
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>17
+<div class='tooltip'>
+<div class='right'>
+<TD>
+13
 </TD>
-<TD>Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a java Color obj
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes two Colors and determines the distance between their RGB values
 </TD>
-<TD>colorFromRgbStrDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xDistanceColorDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ContrastChecker
 </TD>
-<TD>colorFromRgbStr(String colorStr)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+distanceColor(Color fgColor, Color bgColor)
 </TD>
-<TD>rgb(0, 0, 255)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+255,255,0 300,7,21
 </TD>
-<TD>0,0,255
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
 </TD>
-<TD>0,0,255
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>18
+<div class='tooltip'>
+<div class='right'>
+<TD>
+14
 </TD>
-<TD>Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a java Color obj
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes two Colors and determines the distance between their RGB values
 </TD>
-<TD>colorFromRgbStrDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xDistanceColorDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ContrastChecker
 </TD>
-<TD>colorFromRgbStr(String colorStr)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+distanceColor(Color fgColor, Color bgColor)
 </TD>
-<TD>255, 0, 0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+255,255,0 70,30,40
 </TD>
-<TD>255,0,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+294
 </TD>
-<TD>255,0,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+294
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>19
+<div class='tooltip'>
+<div class='right'>
+<TD>
+15
 </TD>
-<TD>Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a java Color obj
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes two Colors and determines the distance between their RGB values
 </TD>
-<TD>colorFromRgbStrDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xDistanceColorDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ContrastChecker
 </TD>
-<TD>colorFromRgbStr(String colorStr)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+distanceColor(Color fgColor, Color bgColor)
 </TD>
-<TD>rgb(-255, 0, 0)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+255,255,0 60,130,0
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+231.6
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+231.6
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>20
+<div class='tooltip'>
+<div class='right'>
+<TD>
+16
 </TD>
-<TD>Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a java Color obj
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a java Color obj
 </TD>
-<TD>colorFromRgbStrDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+colorFromRgbStrDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>colorFromRgbStr(String colorStr)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+colorFromRgbStr(String colorStr)
 </TD>
-<TD>#FFFFFF
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+rgb(255, 255, 255)
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+255,255,255
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+255,255,255
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>21
+<div class='tooltip'>
+<div class='right'>
+<TD>
+17
 </TD>
-<TD>Takes a color in rgb format and converts it to hsl format
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a java Color obj
 </TD>
-<TD>xRgb2HslDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+colorFromRgbStrDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>rgb2Hsl(Color color)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+colorFromRgbStr(String colorStr)
 </TD>
-<TD>160,180,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+rgb(0, 0, 255)
 </TD>
-<TD>hsl(66, 100%, 35%)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+0,0,255
 </TD>
-<TD>hsl(66, 100%, 35%)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+0,0,255
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>22
+<div class='tooltip'>
+<div class='right'>
+<TD>
+18
 </TD>
-<TD>Takes a color in rgb format and converts it to hsl format
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a java Color obj
 </TD>
-<TD>xRgb2HslDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+colorFromRgbStrDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>rgb2Hsl(Color color)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+colorFromRgbStr(String colorStr)
 </TD>
-<TD>80,0,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+255, 0, 0
 </TD>
-<TD>hsl(0, 100%, 15%)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+255,0,0
 </TD>
-<TD>hsl(0, 100%, 15%)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+255,0,0
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>23
+<div class='tooltip'>
+<div class='right'>
+<TD>
+19
 </TD>
-<TD>Takes a color in rgb format and converts it to hsl format
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a java Color obj
 </TD>
-<TD>xRgb2HslDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+colorFromRgbStrDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>rgb2Hsl(Color color)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+colorFromRgbStr(String colorStr)
 </TD>
-<TD>-1,180,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+rgb(-255, 0, 0)
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>24
+<div class='tooltip'>
+<div class='right'>
+<TD>
+20
 </TD>
-<TD>Takes a color in rgb format and converts it to hsl format
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes an Rgb String ( rgb(255, 255, 255) or 255, 255, 255 ) and converts it to a java Color obj
 </TD>
-<TD>xRgb2HslDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+colorFromRgbStrDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>rgb2Hsl(Color color)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+colorFromRgbStr(String colorStr)
 </TD>
-<TD>160,300,0
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+#FFFFFF
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
 </TD>
-<TD>ERROR
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
-<TD>25
+<div class='tooltip'>
+<div class='right'>
+<TD>
+21
 </TD>
-<TD>Takes a color in rgb format and converts it to hsl format
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a color in rgb format and converts it to hsl format
 </TD>
-<TD>xRgb2HslDriver
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xRgb2HslDriver
 </TD>
-<TD>ColorConverter
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
 </TD>
-<TD>rgb2Hsl(Color color)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+rgb2Hsl(Color color)
 </TD>
-<TD>40,25,220
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+160,180,0
 </TD>
-<TD>hsl(244, 79%, 48%)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hsl(66, 100%, 35%)
 </TD>
-<TD>hsl(244, 79%, 48%)
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hsl(66, 100%, 35%)
 </TD>
-<td bgcolor=green>Pass</td>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
+</tr>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+22
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a color in rgb format and converts it to hsl format
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xRgb2HslDriver
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+rgb2Hsl(Color color)
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+80,0,0
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hsl(0, 100%, 15%)
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hsl(0, 100%, 15%)
+</TD>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
+</tr>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+23
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a color in rgb format and converts it to hsl format
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xRgb2HslDriver
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+rgb2Hsl(Color color)
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+-1,180,0
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
+</TD>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
+</tr>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+24
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a color in rgb format and converts it to hsl format
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xRgb2HslDriver
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+rgb2Hsl(Color color)
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+160,300,0
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ERROR
+</TD>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
+</tr>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+25
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+Takes a color in rgb format and converts it to hsl format
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+xRgb2HslDriver
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+ColorConverter
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+rgb2Hsl(Color color)
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+40,25,220
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hsl(244, 79%, 48%)
+</TD>
+</div>
+</div>
+<div class='tooltip'>
+<div class='right'>
+<TD>
+hsl(244, 79%, 48%)
+</TD>
+</div>
+</div>
+<td bgcolor=red >Fail</td>
 </tr>
 </TABLE>
