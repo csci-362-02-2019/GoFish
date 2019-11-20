@@ -63,7 +63,6 @@ public final class ContrastChecker {
      * @param bgColor
      * @return distance color
      */
-    //FAULT ADDED- the green value is being cubed rather than squared
     public static double distanceColor(final Color fgColor, final Color bgColor) {
         int redFg = fgColor.getRed();
         int redBg = bgColor.getRed();
@@ -71,7 +70,7 @@ public final class ContrastChecker {
         int greenFg = fgColor.getGreen();
         int blueFg = fgColor.getBlue();
         int blueBg = bgColor.getBlue();
-        return (Math.sqrt(Math.pow(redFg - redBg, 2) + Math.pow(greenFg - greenBg, 3) + Math.pow(blueFg - blueBg, 2)));
+        return (Math.sqrt(Math.pow(redFg - redBg, 2) + Math.pow(greenFg - greenBg, 2) + Math.pow(blueFg - blueBg, 2)));
     }
 
     /**

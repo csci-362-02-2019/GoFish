@@ -129,7 +129,7 @@ done
 wait
 
 ##reads the temp files
-for file in ../temp/*
+for file in ../temp/*.txt
 do
 i=1;
 filenopath=${file##*/}
